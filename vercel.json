@@ -1,0 +1,11 @@
+{
+  "cleanUrls": false,
+  "headers": [
+    { "source": "/sw.js", "headers": [
+      { "key": "Cache-Control", "value": "no-cache" },
+      { "key": "Service-Worker-Allowed", "value": "/" }
+    ]},
+    { "source": "/data/(.*)", "headers": [ { "key": "Cache-Control", "value": "no-cache" } ] },
+    { "source": "/manifest.json", "headers": [ { "key": "Content-Type", "value": "application/manifest+json" } ] }
+  ]
+}
